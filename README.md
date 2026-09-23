@@ -27,3 +27,30 @@ Aplicativo Android desenvolvido em Jetpack Compose que exibe um cartão de visit
 `Greeting`: Monta o bloco textual principal: saudação ("Olá, como vai?"), nome da pessoa, linha com os cargos (`cargo1` e `cargo2`), a seção `About`, o título "Contatos" e a seção `Contacts`.
 `About`: Exibe o título "Sobre mim" e o parágrafo com o resumo profissional do usuário.
 `Contacts`:  Exibe três linhas (`Row`), cada uma com um ícone (telefone, e-mail, localização) seguido do respectivo dado de contato (número, e-mail, endereço).
+
+## Diagrama da hierarquia dos composables
+```
+MainActivity
+|-- CartãoProfissionalTheme
+    |-- Scaffold
+        |-- Project
+            |-- Column
+                |-- Image (foto de perfil)
+                |-- Greeting
+                    |-- Text (saudação)
+                    |-- Text (nome)
+                    |-- Row
+                    |   |-- Text (cargo1)
+                    |   |-- Text (cargo2)
+                    |-- About
+                    |   |-- Text (título "Sobre mim")
+                    |   |-- Text (descrição)
+                    |-- Text (título "Contatos")
+                    |-- Contacts
+                        |-- Row (Icon + Text: telefone)
+                        |-- Row (Icon + Text: e-mail)
+                        |-- Row (Icon + Text: endereço)
+
+```
+## Aluno
+- Miguel, 3° Período
