@@ -22,11 +22,11 @@ Aplicativo Android desenvolvido em Jetpack Compose que exibe um cartão de visit
 7. Clique em **Run** para compilar e executar o app no emulador/dispositivo selecionado.
 
 ## Descrição dos composables
-`MainActivity.onCreate`: Ponto de entrada do app. Ativa o modo edge-to-edge e define o conteúdo da tela via `setContent`, aplicando o tema `CartãoProfissionalTheme` e chamando o composable `Project` com os dados do usuário (nome e cargos).
-`Project`: Composable raiz da tela. Organiza verticalmente (`Column`) a imagem de perfil e o bloco de saudação/dados, centralizando tudo horizontalmente.
-`Greeting`: Monta o bloco textual principal: saudação ("Olá, como vai?"), nome da pessoa, linha com os cargos (`cargo1` e `cargo2`), a seção `About`, o título "Contatos" e a seção `Contacts`.
-`About`: Exibe o título "Sobre mim" e o parágrafo com o resumo profissional do usuário.
-`Contacts`:  Exibe três linhas (`Row`), cada uma com um ícone (telefone, e-mail, localização) seguido do respectivo dado de contato (número, e-mail, endereço).
+`MainActivity.onCreate`: Ponto de entrada do app. Ativa o modo edge-to-edge e define o conteúdo da tela via `setContent`, aplicando o tema `CartãoProfissionalTheme` e chamando o composable `Project` com os dados do usuário (nome e cargos).  
+`Project`: Composable raiz da tela. Organiza verticalmente (`Column`) a imagem de perfil e o bloco de saudação/dados, centralizando tudo horizontalmente.  
+`Greeting`: Monta o bloco textual principal: saudação ("Olá, como vai?"), nome da pessoa, linha com os cargos (`cargo1` e `cargo2`), a seção `About`, o título "Contatos" e a seção `Contacts`.  
+`About`: Exibe o título "Sobre mim" e o parágrafo com o resumo profissional do usuário.  
+`Contacts`:  Exibe três linhas (`Row`), cada uma com um ícone (telefone, e-mail, localização) seguido do respectivo dado de contato (número, e-mail, endereço).  
 
 ## Diagrama da hierarquia dos composables
 ```
